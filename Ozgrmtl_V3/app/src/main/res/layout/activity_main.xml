@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:backgroundTint="@null"
+    android:background="@drawable/spesific_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="340dp"
+        android:layout_height="550dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/hammadde_spin"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:dropDownSelector="#3FA796" />
+
+            <Button
+                android:id="@+id/hammadde_crud"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/plus"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/urun_spin"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:dropDownSelector="#3FA796" />
+
+            <Button
+                android:id="@+id/urun_crud"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/plus"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/cesit_spin"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:dropDownSelector="#3FA796" />
+
+            <Button
+                android:id="@+id/cesit_crud"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/plus"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/olcu_spin"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:dropDownSelector="#3FA796" />
+
+            <Button
+                android:id="@+id/olcu_crud"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/plus"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/faturali_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Faturalı"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/faturasiz_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Faturasız"
+                        android:textColor="#000000" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/toptan_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Toptan"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/perakende_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Perakende"
+                        android:textColor="#000000" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/hammadde_fiyat_edit"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Hammadde Fiyat"
+                android:inputType="numberDecimal"
+                android:textColor="#13005A"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/hammadde_gramaj_edit"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="Gramaj"
+                android:inputType="numberDecimal"
+
+                android:textColor="#13005A"
+                android:textColorHint="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/iscilik_edit"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="İşçilik Maliyeti"
+                android:inputType="numberDecimal"
+                android:textColor="#13005A"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/kazanc_edit"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="Kazanç"
+                android:inputType="numberDecimal"
+                android:textColor="#13005A"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/maliyet_hesapla_but"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/count"
+            app:backgroundTint="@null" />
+
+        <EditText
+            android:id="@+id/maliyet_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="Ürün Maliyeti"
+            android:inputType="text"
+            android:textColor="#13005A" />
+
+        <Button
+            android:id="@+id/maliyet_kaydet_but"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/save"
+            app:backgroundTint="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/nihai_tablo_gorspin"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:dropDownSelector="#3FA796" />
+
+            <Button
+                android:id="@+id/nihai_gor_but"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/view"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/nihai_crud"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/plus"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
